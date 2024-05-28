@@ -6,7 +6,7 @@ import faker from 'faker';
 
 describe('Forms Functionality', () => {
     beforeEach(() => {
-        cy.visit('https://demoqa.com/automation-practice-form');
+        cy.visit('https://demoqa.com/automation-practice-form', { headers: {"accept-Encoding": "gzip, deflate"}});
     });
     it('Registration Form Successfully', () => {
         const form = {

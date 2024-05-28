@@ -2,7 +2,7 @@
 
 describe('Validate links functionality', () => {
     beforeEach(() => {
-        cy.visit('https://demoqa.com/links');
+        cy.visit('https://demoqa.com/links', { headers: {"accept-Encoding": "gzip, deflate"}});
     });
     it('HOME link => successfully', () => {
         cy.get('#simpleLink').invoke('removeAttr', 'target').click();

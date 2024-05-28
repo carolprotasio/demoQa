@@ -4,7 +4,7 @@ import faker from "faker";
 
 describe('Web Tables Functionality', () => {
     beforeEach(() => {
-        cy.visit('https://demoqa.com/webtables');
+        cy.visit('https://demoqa.com/webtables', { headers: {"accept-Encoding": "gzip, deflate"}});
     });
 
     it('Adding New User successfully',() => {

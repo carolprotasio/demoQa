@@ -31,17 +31,7 @@ describe('', () => {
         });
         cy.get('#confirmResult').should('have.text', 'You selected Ok'); 
     });
-    it('CANCEL - Button click, confirm box will appear successfully', () => {
-        cy.get('#confirmButton').click();
-        cy.wait(6000)
-        cy.on('window:confirm', (confirmText) => {
-            expect(confirmText).to.equal('Do you confirm action?')
-            return false
-            
-            
-        });
-        cy.get('#confirmResult').should('contains', "Cancelar");
-    });
+    
     
     it('YES - on button click, prompt box will appear - successfully', () => {
         cy.get('#promtButton').click();

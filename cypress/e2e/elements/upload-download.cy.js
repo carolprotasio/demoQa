@@ -2,7 +2,7 @@
 
 describe('Upload & Download Functionality', () => {
     beforeEach(() => {
-        cy.visit('https://demoqa.com/upload-download');
+        cy.visit('https://demoqa.com/upload-download', { headers: {"accept-Encoding": "gzip, deflate"}});
     });
     it('Download successfully', () => {
         cy.get('#downloadButton').click();

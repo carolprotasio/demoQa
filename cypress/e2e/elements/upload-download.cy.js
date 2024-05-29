@@ -2,6 +2,8 @@
 
 describe('Upload & Download Functionality', () => {
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/upload-download', { headers: {"accept-Encoding": "gzip, deflate"}});
     });
     it('Download successfully', () => {

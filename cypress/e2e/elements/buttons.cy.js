@@ -2,6 +2,8 @@
 
 describe('Validate Buttons Functionality', () => {
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/buttons');
     });
     it('Double click - Successfully', () => {

@@ -2,6 +2,8 @@
 
 describe('Modal Dialogs - Functionality', () => {
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/modal-dialogs');
     });
     it('Validate Small Modal - Successfully', () => {

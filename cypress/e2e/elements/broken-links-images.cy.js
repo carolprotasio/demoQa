@@ -2,6 +2,8 @@
 
 describe('Validate broken links- images Functionality', () => {
     beforeEach(() => {
+      cy.clearCookies();
+      cy.clearLocalStorage();
         cy.visit('https://demoqa.com/broken', { retryOnStatusCodeFailure: true, retryOnNetworkFailure: true });
     });
     it('Should detected a valid image', () => {

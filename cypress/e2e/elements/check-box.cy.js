@@ -3,6 +3,8 @@
 describe('Check Box Functionality', () => {
 
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/checkbox');
     });
     it('Checked on Office box Successfully- ', () => {                

@@ -4,7 +4,9 @@ import faker from "faker";
 
 describe('', () => {
     beforeEach(() => {
-        cy.visit('https://demoqa.com/alerts', { headers: {"accept-Encoding": "gzip, deflate"}});
+        cy.clearCookies();
+        cy.clearLocalStorage();
+        cy.visit('/alerts', { headers: {"accept-Encoding": "gzip, deflate"}});
     });
     it('Click button to see alert successfully', () => {
         cy.get('#alertButton').click();

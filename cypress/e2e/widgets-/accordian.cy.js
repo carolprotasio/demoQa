@@ -3,6 +3,8 @@
 describe('Accordion Functionality', () => {
 
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/accordian');
     });    
     it('What is Lorem Ipsum? - successfully', () => {        

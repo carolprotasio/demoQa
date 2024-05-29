@@ -2,6 +2,8 @@
 
 describe('Validate links functionality', () => {
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/links', { headers: {"accept-Encoding": "gzip, deflate"}});
     });
     it('HOME link => successfully', () => {

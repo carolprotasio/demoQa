@@ -2,6 +2,8 @@
 
 describe('Auto Complete Functionality', () => {
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/auto-complete', { headers: {"accept-Encoding": "gzip, deflate"}});
     });
     it.only('Multiples color names - Successfully', () => {

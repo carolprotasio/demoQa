@@ -2,6 +2,8 @@
 
 describe('Browser Windows Functionality', () => {
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/browser-windows');
     });
 

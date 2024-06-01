@@ -5,6 +5,7 @@ describe('Modal Dialogs - Functionality', () => {
         cy.clearCookies();
         cy.clearLocalStorage();
         cy.visit('https://demoqa.com/modal-dialogs');
+        cy.wait(200);
     });
     it('Validate Small Modal - Successfully', () => {
         cy.get('#showSmallModal').click();

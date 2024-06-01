@@ -11,12 +11,13 @@ module.exports = defineConfig({
     experimentalModifyObstructiveThirdPartyCode: true,    
   }, 
   defaultCommandTimeout: 10000,
+  requestMode: true,
 
   retries: {
     runMode: 1, 
     openMode: 0 
   },
   
-  fixturesFolder: false,
+  
   video: false,
 });

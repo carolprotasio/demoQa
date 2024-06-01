@@ -7,6 +7,7 @@ describe('', () => {
         cy.clearCookies();
         cy.clearLocalStorage();
         cy.visit('/alerts', { headers: {"accept-Encoding": "gzip, deflate"}});
+        cy.wait(200);
     });
     it('Click button to see alert successfully', () => {
         cy.get('#alertButton').click();

@@ -5,6 +5,7 @@ describe('Browser Windows Functionality', () => {
         cy.clearCookies();
         cy.clearLocalStorage();
         cy.visit('https://demoqa.com/browser-windows');
+        cy.wait(200);
     });
 
     it('New Tab - Successfully', () => {

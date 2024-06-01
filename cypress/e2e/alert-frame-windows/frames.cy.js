@@ -2,7 +2,10 @@
 
 describe('Validate Frames Functionality', () => {
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/frames');
+        cy.wait(200);
     });
     it('Validate bigger frame successfully', () => {
         cy.get('#frame1').then(($frame) => {

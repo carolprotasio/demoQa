@@ -2,7 +2,10 @@
 
 describe('Nested Frames - Functionality', () => {
     beforeEach(() => {
+        cy.clearCookies();
+        cy.clearLocalStorage();
         cy.visit('https://demoqa.com/nestedframes');
+        cy.wait(200);
     });
     it('Validate Nested Frame - successfully', () => {
         cy.get('#frame1').then($frame => {

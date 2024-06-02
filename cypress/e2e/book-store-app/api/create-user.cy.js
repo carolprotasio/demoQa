@@ -19,11 +19,12 @@ function generatePassword() {
 describe('Create User Functionality', () => {
   
     it('Create User Successfully', () => {
+        let userID;
+        
         const newUser = {
             userName: faker.internet.userName(),
             password: generatePassword()
         }
-        cy.writeFile('cypress/fixtures/user.json', newUser);
 
         cy.request({ 
             method: 'POST', 
@@ -34,6 +35,18 @@ describe('Create User Functionality', () => {
                 cy.log(response.body);
             }
             expect(response.status).to.eq(201);
+            userID = response.body.userID;            
+            cy.request({
+                method: 'POST',
+                url: 'https://demoqa.com/Account/v1/GenerateToken',
+                body: {
+                    userName: newUser.userName,
+                    password: newUser.password
+                }
+            }).then(tokenResponse => {
+                const token = tokenResponse.body.token;
+                cy.writeFile('cypress/fixtures/user.json', {...newUser, id: userID, token });
+            });
         });
                  
     });

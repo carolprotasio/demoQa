@@ -2,15 +2,20 @@
 
 Este projeto foi desenvolvido para testar os diversos elementos e funcionalidades oferecidas pelo site [DemoQa](https://demoqa.com/). Ele abrange testes automatizados utilizando a ferramenta Cypress para verificar o comportamento de elementos como forms, alerts, frames, widgets, interações com a interface e testes de API.
 
+![DemoQa](cypress\assets\demoqa.png)
+
 ## Objetivo do Projeto
 
 O objetivo principal deste projeto é fornecer uma estrutura de testes automatizados abrangente para validar o comportamento e a funcionalidade do site DemoQa em diferentes cenários. Os testes são projetados para garantir que todas as funcionalidades do site estejam funcionando corretamente e para detectar quaisquer problemas ou bugs potenciais.
 
-## Tecnologias Utilizadas
+## Durante o desenvolvimento deste projeto, foi utilizado as seguintes tecnologias:
 
-- **Cypress**: Framework de teste de frontend para realizar testes automatizados. Ele oferece uma API simples e intuitiva para escrever testes robustos e confiáveis.
-- **Faker.Js**: Biblioteca para geração de dados fictícios para os testes. Isso permite simular diferentes cenários e dados de entrada durante os testes.
+- **Node.js**: Plataforma para execução de JavaScript no servidor.
 - **Cypress-app**: Plugin Cypress para facilitar a interação com aplicações web. Ele fornece recursos adicionais para manipular elementos da interface do usuário e simplificar a escrita de testes.
+- **Git**: Sistema de controle de versão para gerenciar o código-fonte..
+- **Faker**: Biblioteca para geração de dados aleatórios.
+- **Visual Studio Code (VS Code)**: Editor de código utilizado para desenvolvimento.
+
 
 ## Estrutura do Projeto
 
@@ -37,19 +42,25 @@ O projeto está estruturado em diferentes diretórios, cada um representando uma
 | Upload and Downloads | Verificação se é possível fazer upload e download de arquivos. |
 | Dynamic Properties | Teste para garantir que as propriedades dinâmicas dos elementos funcionem corretamente. |
 
+![DemoQa](cypress\assets\secao-elements.png)
+
 | Module | Description |
 | ------ | ----------- |
 | `Seção Forms` |
-| Practice Forms | Verificação do funcionamento adequado dos formulários de prática. |
+| Practice Forms | Verificação do funcionamento adequado dos formulários de prática.                           |
+
+![DemoQa](cypress\assets\secao-forms.png)
 
 | Module | Description |
 | ------ | ----------- |
 | `Seção Alerts, Frames & Windows` |
-| Browser Windows | Teste para verificar o comportamento das janelas do navegador. |
 | Alerts | Verificação se os alertas são exibidos corretamente. |
+| Browser Windows | Teste para verificar o comportamento das janelas do navegador. |
 | Frames | Teste para garantir que os frames sejam carregados corretamente. |
+| Modal Dialogs | Teste para garantir o correto funcionamento das caixas de diálogo modais.                    |
 | Nested Frames | Verificação do comportamento dos frames aninhados. |
-| Modal Dialogs | Teste para garantir o correto funcionamento das caixas de diálogo modais. |
+
+![DemoQa](cypress\assets\secao-alert.png)
 
 | Module | Description |
 | ------ | ----------- |
@@ -58,19 +69,23 @@ O projeto está estruturado em diferentes diretórios, cada um representando uma
 | Auto Complete | Verificação se o recurso de auto completar funciona corretamente. |
 | Date Picker | Teste para garantir que o seletor de datas funcione adequadamente. |
 | Slider | Verificação do comportamento do controle deslizante. |
-| Progress Bar | Teste para garantir que a barra de progresso seja exibida corretamente. |
+| Progress Bar | Teste para garantir que a barra de progresso seja exibida corretamente.                       |
 | Tabs | Verificação se as abas funcionam conforme o esperado. |
 | Tool Tips | Teste para garantir que os tooltips sejam exibidos corretamente. |
 | Menu | Verificação do comportamento do menu. |
 | Select Menu | Teste para garantir o correto funcionamento do menu de seleção. |
 
+![DemoQa](cypress\assets\secao-widgets.png)
+
 | Module | Description |
 | ------ | ----------- |
 | `Seção Interactions` |
 | Sortable | Verificação se é possível reordenar elementos. |
-| Selectable | Teste para verificar se os elementos podem ser selecionados. |
+| Selectable | Teste para verificar se os elementos podem ser selecionados.                                    |
 | Resizable | Verificação se os elementos podem ser redimensionados. |
 | Draggable | Teste para garantir que os elementos possam ser arrastados. |
+
+![DemoQa](cypress\assets\secao-interaction.png)
 
 | Module | Description |
 | ------ | ----------- |
@@ -79,9 +94,12 @@ O projeto está estruturado em diferentes diretórios, cada um representando uma
 | Login | Teste para garantir o correto funcionamento do login. |
 | Add Book | Verificação se é possível adicionar um livro à coleção do usuário. |
 | Delete Book | Teste para garantir que os livros possam ser excluídos da coleção do usuário. |
-| Authorization | Verificação se o usuário está autorizado a acessar determinadas funcionalidades. |
+| Authorization | Verificação se o usuário está autorizado a acessar determinadas funcionalidades.              |
 | Get Token | Teste para garantir que o token de acesso seja gerado corretamente. |
+![DemoQa](cypress\assets\secao-api.png)
 
+## DemoQa Swagger - Book Store
+- [Swagger](https://demoqa.com/swagger/#)
 
 
 ## Como Executar o Projeto

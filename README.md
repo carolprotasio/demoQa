@@ -104,9 +104,10 @@ O projeto está estruturado em diferentes diretórios, cada um representando uma
 | Module | Description |
 | ------ | ----------- |
 | `Seção Book Store GUI- Graphical user interface` |
+| Book Store | Verificação se a procura por livro traz o resultado esperado. |
 | Login | Login via GUI, utilizando o cadastro do usuário via API |
 | Logout | Teste para garantir sair do aplicativo com sucesso. |
-| Book Store | Verificação se a procura por livro traz o resultado esperado. |
+
 
 ![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/secao-gui.png)
 

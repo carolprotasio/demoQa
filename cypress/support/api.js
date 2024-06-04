@@ -14,9 +14,8 @@ Cypress.Commands.add('apiLogin', (user) => {
       
       expect(response.status).to.equal(200);
       expect(response.body).to.have.property('token');
-      const token = response.body.token;
+      const token = response.body.token;      
       
-      // Adiciona o token ao objeto user e salva no arquivo fixture
       user.token = token;
       return cy.writeFile('cypress/fixtures/user.json', user).then(() => {
           return token;

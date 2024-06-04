@@ -1,7 +1,5 @@
 Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    console.error('Exceção não tratada:', err.message, err.stack);
+    console.error('Exception no treated:', err.message, err.stack);
     return false
   })
 Cypress.Commands.add('addUser', (
@@ -60,8 +58,23 @@ Cypress.Commands.add('addUser', (
     cy.get('#register').click();
 
   });
-  Cypress.Commands.add('login', (userName, password) => {
+  Cypress.Commands.add('guiLogin', (userName, password) => {
     cy.get('#userName').type(userName);
     cy.get('#password').type(password);
     cy.get('#login').click();
   });
+  Cypress.Commands.add('guiLogin', (userName, password) => {
+    
+    cy.fixture('user').then(userData => {
+      const userName = userData.userName;
+      const password = userData.password;
+
+      cy.get('#userName').type(userName);
+      cy.get('#password').type(password);
+      cy.get('#login').click();
+     
+      cy.url().should('eq', 'https://demoqa.com/profile');
+  });
+    
+});
+

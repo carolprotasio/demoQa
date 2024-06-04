@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido para testar os diversos elementos e funcionalidades oferecidas pelo site [DemoQa](https://demoqa.com/). Ele abrange testes automatizados utilizando a ferramenta Cypress para verificar o comportamento de elementos como forms, alerts, frames, widgets, interações com a interface e testes de API.
 
-![DemoQa](cypress\assets\demoqa.png)
+![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/demoQa.png)
 
 ## Objetivo do Projeto
 
@@ -11,11 +11,12 @@ O objetivo principal deste projeto é fornecer uma estrutura de testes automatiz
 ## Durante o desenvolvimento deste projeto, foi utilizado as seguintes tecnologias:
 
 - **Node.js**: Plataforma para execução de JavaScript no servidor.
-- **Cypress-app**: Plugin Cypress para facilitar a interação com aplicações web. Ele fornece recursos adicionais para manipular elementos da interface do usuário e simplificar a escrita de testes.
-- **Git**: Sistema de controle de versão para gerenciar o código-fonte..
+- **JavaScript**: Linguagem de programação utilizada para desenvolver a lógica do projeto.
+- **Cypress Automation Framework**: Framework de automação de testes end-to-end para aplicações web, utilizado para escrever e executar testes automatizados.
+- **Page object Model(POM)**:  Modelo de design de automação de testes que organiza o código em páginas e objetos, facilitando a manutenção e reutilização do código.
+- **Git**: Sistema de controle de versão para gerenciar o código-fonte.
 - **Faker**: Biblioteca para geração de dados aleatórios.
-- **Visual Studio Code (VS Code)**: Editor de código utilizado para desenvolvimento.
-
+- **IDE: Visual Studio Code (VS Code)** Editor de código utilizado para escrever, editar e depurar o código-fonte do projeto.
 
 ## Estrutura do Projeto
 
@@ -42,14 +43,14 @@ O projeto está estruturado em diferentes diretórios, cada um representando uma
 | Upload and Downloads | Verificação se é possível fazer upload e download de arquivos. |
 | Dynamic Properties | Teste para garantir que as propriedades dinâmicas dos elementos funcionem corretamente. |
 
-![DemoQa](cypress\assets\secao-elements.png)
+![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/secao-elements.png)
 
 | Module | Description |
 | ------ | ----------- |
 | `Seção Forms` |
 | Practice Forms | Verificação do funcionamento adequado dos formulários de prática.                           |
 
-![DemoQa](cypress\assets\secao-forms.png)
+![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/secao-forms.png)
 
 | Module | Description |
 | ------ | ----------- |
@@ -60,7 +61,7 @@ O projeto está estruturado em diferentes diretórios, cada um representando uma
 | Modal Dialogs | Teste para garantir o correto funcionamento das caixas de diálogo modais.                    |
 | Nested Frames | Verificação do comportamento dos frames aninhados. |
 
-![DemoQa](cypress\assets\secao-alert.png)
+![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/secao-alert.png)
 
 | Module | Description |
 | ------ | ----------- |
@@ -75,7 +76,7 @@ O projeto está estruturado em diferentes diretórios, cada um representando uma
 | Menu | Verificação do comportamento do menu. |
 | Select Menu | Teste para garantir o correto funcionamento do menu de seleção. |
 
-![DemoQa](cypress\assets\secao-widgets.png)
+![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/secao-widgets.png)
 
 | Module | Description |
 | ------ | ----------- |
@@ -85,18 +86,30 @@ O projeto está estruturado em diferentes diretórios, cada um representando uma
 | Resizable | Verificação se os elementos podem ser redimensionados. |
 | Draggable | Teste para garantir que os elementos possam ser arrastados. |
 
-![DemoQa](cypress\assets\secao-interaction.png)
+![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/secao-interaction.png)
 
 | Module | Description |
 | ------ | ----------- |
 | `Seção Book Store API` |
-| Register | Verificação do processo de registro de usuário. |
-| Login | Teste para garantir o correto funcionamento do login. |
+| Register | Verificação do processo de registro de usuário via API. |
+| Login | Teste para garantir o correto funcionamento do login via API. |
 | Add Book | Verificação se é possível adicionar um livro à coleção do usuário. |
 | Delete Book | Teste para garantir que os livros possam ser excluídos da coleção do usuário. |
 | Authorization | Verificação se o usuário está autorizado a acessar determinadas funcionalidades.              |
 | Get Token | Teste para garantir que o token de acesso seja gerado corretamente. |
-![DemoQa](cypress\assets\secao-api.png)
+
+![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/secao-api.png)
+
+
+| Module | Description |
+| ------ | ----------- |
+| `Seção Book Store GUI- Graphical user interface` |
+| Login | Login via GUI, utilizando o cadastro do usuário via API |
+| Logout | Teste para garantir sair do aplicativo com sucesso. |
+| Book Store | Verificação se a procura por livro traz o resultado esperado. |
+
+![DemoQa](https://github.com/carolprotasio/demoQa/blob/master/cypress/assets/secao-gui.png)
+
 
 ## DemoQa Swagger - Book Store
 - [Swagger](https://demoqa.com/swagger/#)

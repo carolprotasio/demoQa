@@ -12,8 +12,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
 
-    steps:
-      # Step 1: Checkout the repository
+    steps:      
       - name: Checkout code
         uses: actions/checkout@v3
 
